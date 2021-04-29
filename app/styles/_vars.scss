@@ -1,0 +1,107 @@
+$primary: #FB6253;
+$fade: #FF5158;
+$secondary: #000000;
+$tertiary: #02D5F2;
+$text: #707171;
+$blue: #0B7789;
+$main: #F8F7FD;
+
+$colors: (
+  primary: #FB6253,
+  fade: #FF5158,
+  secondary: #000000,
+  tertiary: #02D5F2,
+  blue: #0B7789,
+  white: #ffffff,
+  text: #707171,
+  main: #F8F7FD
+
+);
+
+$fweight: (
+  400: 400,
+  600: 600,
+  700: 700,
+  800: 800,
+);
+
+$isize: (
+  9: 9px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  22: 22px,
+  24: 24px,
+  36: 24px,
+);
+
+$fsize: (
+  9: 9px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  40: 40px,
+);
+
+@mixin isize-modifiers {
+  @each $name, $is in $isize {
+    &-#{$name} {
+      width: $is;
+    }
+  }
+}
+@mixin fs-modifiers {
+  @each $name, $fs in $fsize {
+    &-#{$name} {
+      font-size: $fs;
+    }
+  }
+}
+@mixin fw-modifiers {
+  @each $name, $fw in $fweight {
+    &-#{$name} {
+      font-weight: $fw;
+    }
+  }
+}
+
+@mixin color-modifiers {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      color: $hex;
+    }
+  }
+}
+
+@mixin bg-modifiers {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      background-color: $hex;
+    }
+  }
+}
+
+.color {
+  @include color-modifiers;
+}
+.bgc {
+  @include bg-modifiers;
+}
+
+.f {
+  @include fw-modifiers;
+}
+.is {
+  @include isize-modifiers;
+}
+
+.fs {
+  @include fs-modifiers;
+}

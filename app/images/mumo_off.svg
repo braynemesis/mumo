@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1324.498" height="310.985" viewBox="0 0 1324.498 310.985">
+  <defs>
+    <filter id="Caminho_9" x="665.118" y="5.139" width="332.393" height="300.707" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#48210c" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_10" x="0" y="5.139" width="332.393" height="300.707" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#48210c" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_11" x="356.907" y="8.229" width="283.707" height="302.754" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#48210c" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_12" x="1013.511" y="0" width="310.986" height="310.985" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-color="#48210c" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_9194" data-name="Grupo 9194" transform="translate(-443 -518.719)">
+    <g transform="matrix(1, 0, 0, 1, 443, 518.72)" filter="url(#Caminho_9)">
+      <path id="Caminho_9-2" data-name="Caminho 9" d="M2222.267-386.58c-18.718-.344-33.371-16.4-33.371-35.128V-565.857a1.545,1.545,0,0,0-2.87-.8l-36.441,60.414a58.544,58.544,0,0,1-49.871,28.161,58.566,58.566,0,0,1-49.875-28.157L2013.4-566.653a1.548,1.548,0,0,0-2.875.8v144.149c0,18.725-14.644,34.784-33.361,35.128a34.008,34.008,0,0,1-34.646-34v-192.2a56.571,56.571,0,0,1,56.505-56.5,56.794,56.794,0,0,1,48.381,27.326l50.984,84.532a1.549,1.549,0,0,0,2.651,0l50.223-83.275c9.908-16.418,27.1-27.546,46.25-28.507a56.561,56.561,0,0,1,59.4,56.428v192.2A34.007,34.007,0,0,1,2222.267-386.58Z" transform="translate(-1268.4 678.42)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 443, 518.72)" filter="url(#Caminho_10)">
+      <path id="Caminho_10-2" data-name="Caminho 10" d="M2026.961-386.58c-18.718-.344-33.362-16.4-33.362-35.128V-565.857a1.551,1.551,0,0,0-2.879-.8l-36.436,60.414a58.545,58.545,0,0,1-49.876,28.161,58.564,58.564,0,0,1-49.871-28.157l-36.446-60.417a1.542,1.542,0,0,0-2.865.8v144.149c0,18.725-14.653,34.784-33.371,35.128a34.007,34.007,0,0,1-34.642-34v-192.2a56.567,56.567,0,0,1,56.5-56.5,56.79,56.79,0,0,1,48.386,27.326l50.985,84.532a1.549,1.549,0,0,0,2.651,0l50.228-83.275c9.9-16.418,27.094-27.546,46.24-28.507a56.563,56.563,0,0,1,59.4,56.428v192.2A34.009,34.009,0,0,1,2026.961-386.58Z" transform="translate(-1738.21 678.42)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 443, 518.72)" filter="url(#Caminho_11)">
+      <path id="Caminho_11-2" data-name="Caminho 11" d="M1984.867-383.617c-73.252,0-132.851-59.6-132.851-132.854v-117.9a34.006,34.006,0,0,1,34-34,34,34,0,0,1,34,34v117.9a64.917,64.917,0,0,0,64.843,64.844,64.921,64.921,0,0,0,64.848-64.844v-117.9a34.006,34.006,0,0,1,34-34,34.009,34.009,0,0,1,34,34v117.9C2117.723-443.214,2058.124-383.617,1984.867-383.617Z" transform="translate(-1486.11 680.6)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 443, 518.72)" filter="url(#Caminho_12)">
+      <path id="Caminho_12-2" data-name="Caminho 12" d="M2191.311-377.8c-80.777,0-146.491-65.715-146.491-146.492s65.714-146.493,146.491-146.493,146.5,65.718,146.5,146.493S2272.088-377.8,2191.311-377.8Zm0-224.976a78.568,78.568,0,0,0-78.483,78.484,78.571,78.571,0,0,0,78.483,78.484A78.578,78.578,0,0,0,2269.8-524.3,78.575,78.575,0,0,0,2191.311-602.78Z" transform="translate(-1022.31 674.79)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
