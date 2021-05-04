@@ -11,6 +11,7 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.min.css" integrity="sha512-oWGNtrDzSlj0anREPStk8J0hESJVpJTIMc9yhot3iVacYYpd1t49SNzOy7A/D6IwhUuUS9kcqcW4K3v0OtUuPA==" crossorigin="anonymous" /> -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -24,7 +25,7 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <main class="container-fluid m-0 p-0">
+  <main class="container-fluid m-0 p-0" id="main">
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
       <div class="container d-flex flex-column justify-content-center align-items-start hat">
         <img src="./images/mumo_off.svg" alt="Mumo" class="img-fluid">
@@ -43,23 +44,24 @@
       </div>
     </section>
     <section id="content" class="vh-100 position-relative">
-      <section id="intro" class="vh-100 d-flex justify-content-center align-items-center flex-column">
-        <div class="header">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-between">
-                <img src="./images/logo-main.svg" alt="Logo">
-                <img src="./images/menu_burger.svg" alt="Logo">
-              </div>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+              <a href="#"><img src="./images/logo-main.svg" alt="Logo"></a>
+              <img src="./images/menu_burger.svg" alt="Logo">
             </div>
           </div>
         </div>
+      </div>
+      <section id="intro" class="vh-100 d-flex justify-content-center align-items-center flex-column">
         <div class="container">
           <div class="row">
             <div class="col-md-6 d-none d-md-block">
               <img src="./images/iphone_mumo.png" alt="Iphone" class="img-fluid">
             </div>
-            <div class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center">
               <img src="./images/mumo_icon.svg" alt="Mumo" class="img-fluid mt-md-5 pt-md-5 pt-4">
               <img src="./images/iphone_mumo.png" alt="Iphone" class="w-50 d-block d-md-none">
               <h1 class="extra color-text pt-5">É muito fácil ouvir</h1>
@@ -68,6 +70,215 @@
               <p class="fs-20 color-text">Rádios online exclusivas com <br />
                 diferentes estilos musicais.</p>
               <p class="fs-20 color-text">Serviço exclusivo para operadoras</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-2" class="vh-100 d-flex justify-content-center align-items-center flex-column">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+              <img src="./images/devices.png" alt="Devices" class="img-fluid">
+            </div>
+            <div
+              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center">
+              <h1 class="extra color-text pt-5">Em qualquer lugar</h1>
+              <p class="fs-28 color-text pt-3">Tv e Celulares</p>
+              <p class="fs-28 color-text">Android, IOS e Android TV</p>
+              <div>
+                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play">
+                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-3" class="vh-100 d-flex justify-content-center align-items-center flex-column">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 bg-sec-3">
+              <img src="./images/for_all.png" alt="For all" class="img-fluid d-md-none d-block">
+            </div>
+            <div
+              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center">
+              <h1 class="extra color-text pt-5">Música para todos</h1>
+              <p class="fs-20 color-text pt-3">Mais de 50 estação musicais <br> para todos os gostos.</p>
+              <p class="fs-20 color-text">Música para todos os momentos.</p>
+              <div>
+                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play">
+                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-4" class="vh-100 d-flex justify-content-center align-items-center flex-column">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+              <img src="./images/sports.png" alt="Sports" class="img-fluid">
+            </div>
+            <div
+              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center">
+              <h1 class="extra color-text pt-5">Esportes e Notícias</h1>
+              <p class="fs-20 color-text pt-3">Não perca nada do que acontece no <br> mundo.</p>
+              <p class="fs-20 color-text">As melhores estações de rádio 24 <br> horas por dia.</p>
+              <div>
+                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play">
+                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="gradient-orange">
+        <section id="sec-5" class="d-flex justify-content-center align-items-center flex-column pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 flex-column justify-content-center align-items-center">
+                <h1 class="extra text-white text-center pt-5 extra">É só dar play e curtir</h1>
+              </div>
+            </div>
+            <div class="row mt-5 pt-5">
+              <div class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center"> <img
+                  src="./images/icon (2).svg" alt="">
+                <p class="text-white fs-20 f-600">Muito fácil de usar</p>
+              </div>
+              <div class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center">
+                <img src="./images/icon (3).svg" alt="">
+                <p class="text-white fs-20 f-600">Ativação rápida e fácil</p>
+              </div>
+              <div class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center">
+                <img src="./images/icon (4).svg" alt="">
+                <p class="text-white fs-20 f-600">Variedade de Conteúdo</p>
+              </div>
+              <div class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center">
+                <img src="./images/icon (1).svg" alt="">
+                <p class="text-white fs-20 f-600">Produto para todos</p>
+              </div>
+            </div>
+            <div class="row pb-5">
+              <div class="col-12 pt-5">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sec-6" class="d-flex vh-100 justify-content-center align-items-center flex-column  pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 offset-md-1 d-none d-md-block">
+                <img src="./images/potential.png" alt="Sports" class="img-fluid">
+              </div>
+              <div
+                class="col-12 col-md-6 pl-md-3 d-flex d-md-block flex-column justify-content-center align-items-center">
+                <h1 class="extra text-white pt-1">Seu provedor <br> potencializado</h1>
+                <p class="fs-18 text-white pt-5 f-600">Reduza imposto e aumente a lucratividade</p>
+                <p class="fs-18 text-white pt-3 f-600">Um SVA consumível por toda a sua base</p>
+                <p class="fs-18 text-white pt-3 f-600">Reduza a taxa de cancelamento em 70%</p>
+                <p class="fs-18 text-white pt-3 f-600">Preço acessível para todas empresas</p>
+                <p class="fs-18 text-white pt-3 f-600">Personalizado com a marca do seu provedor</p>
+                <button type="button" class="btn btn-mumo shadow">Solicitar Orçamento</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="sec-7" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 pb-5">
+              <h1 class="extra color-text text-center">Distribuido em mais de 50 operadoras</h1>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <div class="col-12 pt-5">
+              <img src="./images/clients.png" alt="" class="d-flex mx-auto img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-8" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 pb-5">
+              <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-flex d-none ml-auto">
+              <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-none d-flex mx-auto">
+            </div>
+            <div class="col-12 col-md-6">
+              <h1>Líder em serviços <br>
+                de streaming de música<br>
+                para empresas.</h1>
+
+              <p class="fs-22 color-text pt-5 pb-5 f-600">Mais de 6 milhões de downloads <br> nas nossas plataformas</p>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (1).svg" alt="">
+            </div>
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (2).svg" alt="">
+            </div>
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (3).svg" alt="">
+            </div>
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (4).svg" alt="">
+            </div>
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (6).svg" alt="">
+            </div>
+            <div class="col-md-2 col-6">
+              <img src="./images/clients_superplayer (5).svg" alt="">
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-12 text-center">
+              <small>UMA EMPRESA</small>
+            </div>
+            <div class="col-12">
+              <img src="./images/movile.svg" alt="" class="d-flex mx-auto">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-9" class="d-flex vh-100 justify-content-center align-items-center flex-column  pt-5 bg-gray mt-5 mt-md-0">
+        <div class="container">
+          <div class="col-md-12">
+            <h2 class="bold-extra py-5">Vamos Conversar?</h2>
+            <form class="form-contact">
+              <div class="form-row">
+                <div class="col-md-6 col-12">
+                  <input type="text" class="form-control" placeholder="Nome">
+                  <input type="text" class="form-control" placeholder="Celular">
+                  <input type="text" class="form-control" placeholder="Empresa">
+                  <select class="custom-select mb-3">
+                    <option selected>Número de clientes</option>
+                    <option value="1">1-10</option>
+                    <option value="2">11-50</option>
+                    <option value="2">51-100</option>
+                    <option value="3">100+</option>
+                  </select>
+
+                </div>
+                <div class="col-md-6 col-12">
+                  <textarea class="form-control pt-3" id="exampleFormControlTextarea1" placeholder="Nos fale do seu provedor…" rows="10"></textarea>
+                  <button type="submit" class="btn btn-black shadow mt-4 ml-auto px-4 py-2 d-flex">Solicitar Cotação</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-md-12 pt-5">
+              <img src="./images/logo-main.svg" alt="" width="200" class="d-flex mx-auto">
+              <p class="color-text fs-22 text-center extra">comercial@mumo.fm</p>
             </div>
           </div>
         </div>
@@ -88,7 +299,7 @@
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- endbuild -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js" integrity="sha512-3vC1ND9Q0xIF5ArZ7fiUJhuhNN52pcZ5lY4Q7ZYu+spttwrEM4MgZuAAioHscDppywlBvu2YWZui+oaE3iPy2A==" crossorigin="anonymous"></script>
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->

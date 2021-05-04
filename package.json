@@ -4,6 +4,7 @@
     "node": ">=4"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "modernizr": "^3.7.1",

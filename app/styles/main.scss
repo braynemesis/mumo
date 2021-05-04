@@ -36,5 +36,13 @@ h1, h2, h4, h5, b{
 }
 .extra{
   font-family: 'gilroyextrabold', Courier, monospace;
+}
+.bold-extra{
+  font-family: 'gilroybold', Courier, monospace !important;
+}
 
+.vh-md-100{
+  @media screen and(min-width: 900px){
+    height: 100vh;
+  }
 }
