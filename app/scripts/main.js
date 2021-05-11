@@ -13,14 +13,14 @@ $('.header').fadeOut('fast')
 $(window).on('scroll', function(event){
   if(document.documentElement.scrollTop > 900){
 $('.header').show()
-document.querySelector('meta[name="theme-color"]').setAttribute("content", '#ffffff');
+document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
   } else {
-document.querySelector('meta[name="theme-color"]').setAttribute("content", '#FB6253');
+document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FB6253');
 $('.header').fadeOut('fast')
   }
 });
 
-new WOW().init();
+
 // $("#main").onepage_scroll({
 //   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
 //   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
