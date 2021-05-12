@@ -1,4 +1,8 @@
-console.log('\'Allo \'Allo!');
+
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
 
 // Uncomment to enable Bootstrap tooltips
 // https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
@@ -9,14 +13,17 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 $('.header').fadeOut('fast')
+$('.fixed-badge').fadeOut('fast')
 
 $(window).on('scroll', function(event){
   if(document.documentElement.scrollTop > 900){
-$('.header').show()
+$('.header').fadeIn()
+$('.fixed-badge').fadeIn()
 document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
   } else {
 document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FB6253');
 $('.header').fadeOut('fast')
+$('.fixed-badge').fadeOut('fast')
   }
 });
 
