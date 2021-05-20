@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -28,277 +29,259 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 d-flex justify-content-between">
-            <a onclick="$('#main').moveTo(1)"><img src="./images/logo-main.svg" alt="Logo"></a>
-            <span class="d-flex justify-content-end w-50">
-              <p class="p-0 m-0 fs-14 color-black f-600 font-weight-bold" id="title-content">Sobre</p>
-              <img src="./images/burger_menu.svg" alt="Logo" class="img-fluid pl-3" width="35">
-            </span>
-          </div>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-between">
+          <a onclick="$('#main').moveTo(1)"><img src="./images/logo-main.svg" alt="Logo"></a>
+          <span class="d-flex justify-content-end w-50">
+            <p class="p-0 m-0 fs-14 color-black f-600 font-weight-bold" id="title-content">Sobre</p>
+            <img src="./images/burger_menu.svg" alt="Logo" class="img-fluid pl-3" width="35">
+          </span>
         </div>
       </div>
     </div>
+  </div>
   <main class="container-fluid m-0 p-0" id="main">
-      <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
-        <div class="container-fluid d-flex flex-column justify-content-center align-items-start hat">
-          <div class="inner-container">
-            <img src="./images/mumo_off.svg" alt="Mumo"
-              class="img-fluid mumo-logo wow animate__animated animate__fadeIn">
-            <h1 class="color-white display-3 extra d-md-block d-none wow animate__animated animate__fadeIn"
-              data-wow-delay="1s">É só dar play</h1>
-            <h1 class="color-white extra d-block d-md-none text-center wow animate__animated animate__fadeIn"
-              data-wow-delay="1s">É só dar play</h1>
-            <div class="wow animate__animated animate__fadeIn" data-wow-delay="2s">
-              <!-- <p class="extra color-white text-center d-flex justify-content-center align-items-center">Baixe os
-                aplicativos
-                nas lojas</p>
-
-              <img src="./images/googleplay.png" alt="Google Play">
-              <img src="./images/appstore.png" alt="App Store"> -->
+    <section id="sec-1" class="d-flex flex-column justify-content-center align-items-center position-relative" data-section="1">
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-start hat">
+        <div class="inner-container">
+          <img src="./images/mumo_off.svg" alt="Mumo" class="img-fluid mumo-logo animate__animated animate__fadeIn" style="animation-delay: 1s;" >
+          <h1 class="color-white display-3 extra d-md-block d-none wow animate__animated animate__fadeIn"
+            data-wow-delay="1s" style="animation-delay: 2s;">É só dar play</h1>
+          <h1 class="color-white extra d-block d-md-none text-center animate__animated animate__fadeIn"
+            data-wow-delay="1s" style="animation-delay: 2s;">É só dar play</h1>
+          <a class="float-icon animate__animated animate__fadeIn" onclick="$('#main').moveTo(2)"  style="animation-delay: 2.5s;">
+            <img src="./images/chevron.svg" alt="click to scroll">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="sec-2" class="vh-100 d-flex justify-content-center align-items-center flex-column" data-section="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-none d-md-block animate__animated animate__fadeInLeft" data-wow-duration="2s">
+            <img src="./images/iphone_mumo.png" alt="Iphone" class="img-fluid">
+          </div>
+          <div
+            class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center animate__animated animate__fadeInRight animate__delay-1s">
+            <img src="./images/mumo_icon.svg" alt="Mumo" class="img-fluid mt-md-5 pt-md-5 pt-4">
+            <img src="./images/iphone_mumo.png" alt="Iphone" class="w-50 d-block d-md-none">
+            <h1 class="extra color-text pt-5">É muito fácil ouvir</h1>
+            <p class="fs-20 color-text pt-3">O jeito mais fácil de ouvir música, <br />
+              notícias e esportes.</p>
+            <p class="fs-20 color-text">Rádios online exclusivas com <br />
+              diferentes estilos musicais.</p>
+            <p class="fs-20 color-text">Serviço exclusivo para operadoras</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-3" class="vh-100 d-flex justify-content-center align-items-center flex-column" loading="lazy" data-section="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
+            <img src="./images/devices.png" alt="Devices" class="img-fluid">
+          </div>
+          <div
+            class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center animate__animated animate__fadeInRight animate__delay-1s"
+            data-wow-duration="1.5s" data-wow-delay="1s">
+            <h1 class="extra color-text pt-5">Em qualquer lugar</h1>
+            <p class="fs-28 color-text pt-3">Tv e Celulares</p>
+            <p class="fs-28 color-text">Android, IOS e Android TV</p>
+            <div class="pt-4">
+              <img src="./images/googleplay.png" class="img-fluid" alt="Google Play" width="120">
+              <!-- diminuir e aumentar o espaçamento entre o texto -->
+              <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store" width="125">
             </div>
-            <a class="float-icon" onclick="$('#main').moveTo(2)">
-              <img src="./images/chevron.svg" alt="click to scroll">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-4"
+      class="vh-100 d-flex justify-content-center align-items-center flex-column animate__animated animate__fadeInLeft">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 bg-sec-3">
+            <img src="./images/for_all.png" alt="For all" class="img-fluid d-md-none d-block">
+          </div>
+          <div
+            class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center animate__animated animate__fadeInRight">
+            <h1 class="extra color-text pt-5">Música para todos</h1>
+            <p class="fs-20 color-text pt-3">Mais de 50 estação musicais <br> para todos os gostos.</p>
+            <p class="fs-20 color-text">Música para todos os momentos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-5" class="d-flex justify-content-center align-items-center flex-column pt-5 gradient-orange" data-section="5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 flex-column justify-content-center align-items-center">
+            <h1 class="extra text-white text-center pt-md-5 extra">É só dar play e curtir</h1>
+          </div>
+        </div>
+        <div class="row mt-md-3 pt-2 animate__animated animate__fadeIn animate__delay-1s">
+          <div
+            class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center"
+            data-wow-duration="2s"> <img src="./images/icon (2).svg" width="100" class="img-fluid d-flex mx-auto" alt="">
+            <p class="text-white text-center fs-20 f-600">Muito fácil de usar</p>
+          </div>
+          <div
+            class="col-md-3 col-6 d-flex justify-content-center flex-column"
+            data-wow-duration="2s" data-wow-delay=".3s">
+            <img src="./images/icon (3).svg" class="img-fluid d-flex mx-auto" width="100" alt="">
+            <p class="text-white fs-20 f-600 text-center">Ativação rápida e fácil</p>
+          </div>
+          <div
+            class="col-md-3 col-6 d-flex justify-content-center flex-column"
+            data-wow-duration="2s" data-wow-delay=".5s">
+            <img src="./images/icon (4).svg" class="img-fluid d-flex mx-auto" width="100" alt="">
+            <p class="text-white fs-20 f-600 text-center">Variedade de Conteúdo</p>
+          </div>
+          <div
+            class="col-md-3 col-6 d-flex justify-content-center flex-column"
+            data-wow-duration="2s" data-wow-delay=".7s">
+            <img src="./images/icon (1).svg" class="img-fluid d-flex mx-auto" width="100" alt="">
+            <p class="text-white fs-20 f-600 text-center">Produto para todos</p>
+          </div>
+        </div>
+        <div class="row pb-md-5 animate__animated animate__fadeIn animate__delay-2s">
+          <div class="col-12 pt-5 d-flex align-items-center">
+            <a data-fancybox href="https://www.youtube.com/watch?v=lIUenAPoLac" class="d-flex mx-auto">
+              <img class="img-fluid w-75 d-flex mx-auto" src="./images/video_fallback.png" />
             </a>
           </div>
         </div>
-      </section>
-      <section id="intro" class="vh-100 d-flex justify-content-center align-items-center flex-column">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 d-none d-md-block wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
-              <img src="./images/iphone_mumo.png" alt="Iphone" class="img-fluid">
-            </div>
-            <div
-              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center wow animated fadeIn"
-              data-wow-duration="2s" data-wow-delay="1s">
-              <img src="./images/mumo_icon.svg" alt="Mumo" class="img-fluid mt-md-5 pt-md-5 pt-4">
-              <img src="./images/iphone_mumo.png" alt="Iphone" class="w-50 d-block d-md-none">
-              <h1 class="extra color-text pt-5">É muito fácil ouvir</h1>
-              <p class="fs-20 color-text pt-3">O jeito mais fácil de ouvir música, <br />
-                notícias e esportes.</p>
-              <p class="fs-20 color-text">Rádios online exclusivas com <br />
-                diferentes estilos musicais.</p>
-              <p class="fs-20 color-text">Serviço exclusivo para operadoras</p>
-            </div>
+      </div>
+    </section>
+    <section id="sec-6"
+      class="d-flex vh-100 justify-content-center align-items-center flex-column gradient-orange-reverse  pt-5" data-section="6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 offset-md-1 d-none d-md-block animate__animated animate__fadeInLeft" style="animation-delay: 1s;">
+            <img src="./images/potential.png" alt="Sports" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 pl-md-3 d-flex d-md-block flex-column justify-content-center align-items-center">
+            <h1 class="extra text-white pt-1 animate__animated animate__fadeIn" style="animation-delay: 1s;">Seu
+              provedor <br> potencializado</h1>
+            <p class="fs-18 text-white pt-5 f-600 animate__animated animate__fadeIn" style="animation-delay: 1.3s;">Reduza imposto e aumente a lucratividade</p>
+            <p class="fs-18 text-white pt-3 f-600 animate__animated animate__fadeIn" style="animation-delay: 1.6s;">Um SVA consumível por toda a sua base</p>
+            <p class="fs-18 text-white pt-3 f-600 animate__animated animate__fadeIn" style="animation-delay: 1.9s;">Reduza a taxa de cancelamento em 70%</p>
+            <p class="fs-18 text-white pt-3 f-600 animate__animated animate__fadeIn" style="animation-delay: 2.2s;">Preço acessível para todas empresas</p>
+            <p class="fs-18 text-white pt-3 f-600 animate__animated animate__fadeIn" style="animation-delay: 2.5s;">Personalizado com a marca do seu provedor</p>
+            <button type="button" style="animation-delay: 2.9s;" class="btn btn-mumo shadow animate__animated animate__fadeIn" onclick="$('#main').moveTo(9)">Solicitar Orçamento</button>
           </div>
         </div>
-      </section>
-      <section id="sec-2" class="vh-100 d-flex justify-content-center align-items-center flex-column">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
-              <img src="./images/devices.png" alt="Devices" class="img-fluid">
-            </div>
-            <div
-              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center wow animate__animated animate__fadeInRight"
-              data-wow-duration="1.5s" data-wow-delay="1s">
-              <h1 class="extra color-text pt-5">Em qualquer lugar</h1>
-              <p class="fs-28 color-text pt-3">Tv e Celulares</p>
-              <p class="fs-28 color-text">Android, IOS e Android TV</p>
-              <div class="pt-4">
-                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play" width="120"> <!-- diminuir e aumentar o espaçamento entre o texto -->
-                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store"  width="125">
+      </div>
+    </section>
+    <section id="sec-7" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-white" data-section="7">
+      <div class="container">
+        <div class="row animate__animated animate__fadeIn" style="animation-delay: .5s;">
+          <div class="col-12 pb-5">
+            <h1 class="extra color-text text-center">Distribuido em mais de 50 operadoras</h1>
+          </div>
+        </div>
+        <div class="row d-flex animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+          <div class="col-12 pt-5">
+            <img src="./images/clients.png" alt="" class="d-flex mx-auto img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-8" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-gray" data-section="8">
+      <div class="container">
+        <div class="row animate__animated animate__fadeIn" style="animation-delay: .5s;">
+          <div class="col-12 col-md-6 pb-md-5 pb-3">
+            <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-flex d-none ml-auto">
+            <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-none d-flex mx-auto"
+              width="100">
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 class="d-none d-md-block">Líder em serviços <br>
+              de streaming de música<br>
+              para empresas.</h1>
+            <h2 class="d-block d-md-none">Líder em serviços <br>
+              de streaming de música<br>
+              para empresas.</h2>
+
+            <p class="fs-22 color-text pt-5 pb-md-5 f-600">Mais de 6 milhões de downloads <br> nas nossas plataformas
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5 animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (1).svg" class="img-fluid" alt="Superplaywe">
+          </div>
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (2).svg" class="img-fluid" alt="Bradesco Music">
+          </div>
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (3).svg" class="img-fluid" alt="Mumo">
+          </div>
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (4).svg" class="img-fluid" alt="SBT Hits">
+          </div>
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (6).svg" class="img-fluid" alt="Louve">
+          </div>
+          <div class="col-md-2 col-4">
+            <img src="./images/clients_superplayer (5).svg" class="img-fluid" alt="Azul Sound">
+          </div>
+        </div>
+        <div class="row pt-5 animate__animated animate__fadeIn" style="animation-delay: 2s;">
+          <div class="col-12 text-center">
+            <small>UMA EMPRESA</small>
+          </div>
+          <div class="col-12">
+            <img src="./images/movile.svg" alt="" class="d-flex mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec-9" class="d-flex vh-100 justify-content-center align-items-center flex-column pt-5 bg-final-gray mt-5 mt-md-0">
+      <div class="container">
+        <div class="col-md-12">
+          <h2 class="bold-extra py-5 animate__animated animate__fadeIn" style="animation-delay: .5s;">Vamos Conversar?</h2>
+          <form class="form-contact animate__animated animate__fadeIn" style="animation-delay: 1.3s;">
+            <div class="form-row">
+              <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
+                <input type="text" class="form-control" placeholder="Nome" required>
+                <input type="text" class="form-control" placeholder="Celular" required>
+                <input type="text" class="form-control" placeholder="Empresa" required>
+                <select class="custom-select m-0 p-0 pl-3" required>
+                  <option selected>Número de clientes</option>
+                  <option value="1">1-10</option>
+                  <option value="2">11-50</option>
+                  <option value="2">51-100</option>
+                  <option value="3">100+</option>
+                </select>
+
+              </div>
+              <div class="col-md-6 pl-md-4 col-12">
+                <textarea class="form-control mt-3 mt-md-0 pt-3 h-md-100" id="exampleFormControlTextarea1"
+                  placeholder="Nos fale do seu provedor…" rows="10"></textarea>
+                <button type="submit" class="btn btn-black shadow mt-4 ml-auto px-4 py-1 d-flex bold-extra">Solicitar
+                  Cotação</button>
               </div>
             </div>
+          </form>
+        </div>
+      </div>
+      <div class="container pt-md-5 animate__animated animate__fadeIn" style="animation-delay: 2s;">
+        <div class="row">
+          <div class="col-md-12 pt-md-5">
+            <img src="./images/logo-main.svg" alt="" width="200" class="d-flex mx-auto">
+            <p class="color-text fs-22 text-center extra"> <a href="mailto:comercial@mumo.fm">comercial@mumo.fm</a></p>
           </div>
         </div>
-      </section>
-      <section id="sec-3"
-        class="vh-100 d-flex justify-content-center align-items-center flex-column wow animate__animated animate__fadeInLeft"
-        data-wow-duration="2s" data-wow-delay="1s">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 bg-sec-3">
-              <img src="./images/for_all.png" alt="For all" class="img-fluid d-md-none d-block">
-            </div>
-            <div
-              class="col-12 col-md-5 pl-md-3 offset-md-1 d-flex d-md-block flex-column justify-content-center align-items-center wow animate__animated animate__fadeInRight"
-              data-wow-duration="2s" data-wow-delay="3s">
-              <h1 class="extra color-text pt-5">Música para todos</h1>
-              <p class="fs-20 color-text pt-3">Mais de 50 estação musicais <br> para todos os gostos.</p>
-              <p class="fs-20 color-text">Música para todos os momentos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sec-5" class="d-flex justify-content-center align-items-center flex-column pt-5 gradient-orange">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 flex-column justify-content-center align-items-center">
-              <h1 class="extra text-white text-center pt-md-5 extra">É só dar play e curtir</h1> <!--Ajustar conteúdo-->
-            </div>
-          </div>
-          <div class="row mt-md-3  pt-2">
-            <div
-              class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeIn"
-              data-wow-duration="2s"> <img src="./images/icon (2).svg" width="100" class="img-fluid" alt="">
-              <p class="text-white text-center fs-20 f-600">Muito fácil de usar</p>
-            </div>
-            <div
-              class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeIn"
-              data-wow-duration="2s" data-wow-delay=".3s">
-              <img src="./images/icon (3).svg" class="img-fluid" width="100" alt="">
-              <p class="text-white fs-20 f-600 text-center">Ativação rápida e fácil</p>
-            </div>
-            <div
-              class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center  wow animate__animated animate__fadeIn"
-              data-wow-duration="2s" data-wow-delay=".5s">
-              <img src="./images/icon (4).svg" class="img-fluid" width="100" alt="">
-              <p class="text-white fs-20 f-600 text-center">Variedade de Conteúdo</p>
-            </div>
-            <div
-              class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeIn"
-              data-wow-duration="2s" data-wow-delay=".7s">
-              <img src="./images/icon (1).svg" class="img-fluid" width="100" alt="">
-              <p class="text-white fs-20 f-600 text-center">Produto para todos</p>
-            </div>
-          </div>
-          <div class="row pb-md-5 wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-            <div class="col-12 pt-5 d-flex align-items-center">
-              <a data-fancybox href="https://www.youtube.com/watch?v=lIUenAPoLac" class="d-flex mx-auto">
-                <img class="img-fluid w-75 d-flex mx-auto" src="./images/video_fallback.png" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sec-6"
-        class="d-flex vh-100 justify-content-center align-items-center flex-column gradient-orange-reverse  pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5 offset-md-1 d-none d-md-block wow animate__animated animate__fadeInLeft"
-              data-wow-duration="2s">
-              <img src="./images/potential.png" alt="Sports" class="img-fluid">
-            </div>
-            <div
-              class="col-12 col-md-6 pl-md-3 d-flex d-md-block flex-column justify-content-center align-items-center">
-              <h1 class="extra text-white pt-1 animate__animated wow animate__fadeIn" data-wow-duration="2s">Seu
-                provedor <br> potencializado</h1>
-              <p class="fs-18 text-white pt-5 f-600 wow animate__animated animate__fadeIn" data-wow-duration="2s">
-                Reduza imposto e aumente a lucratividade</p>
-              <p class="fs-18 text-white pt-3 f-600 wow animate__animated animate__fadeIn" data-wow-duration="2s"
-                data-wow-delay=".3s">Um SVA consumível por toda a sua base</p>
-              <p class="fs-18 text-white pt-3 f-600 wow animate__animated animate__fadeIn" data-wow-duration="2s"
-                data-wow-delay=".5s">Reduza a taxa de cancelamento em 70%</p>
-              <p class="fs-18 text-white pt-3 f-600 wow animate__animated animate__fadeIn" data-wow-duration="2s"
-                data-wow-delay=".7s">Preço acessível para todas empresas</p>
-              <p class="fs-18 text-white pt-3 f-600 wow animate__animated animate__fadeIn" data-wow-duration="2s"
-                data-wow-delay="1s">Personalizado com a marca do seu provedor</p>
-              <button type="button" class="btn btn-mumo shadow wow animate__animated animate__fadeIn" data-wow-duration="2s"
-                data-wow-delay="1.3s" onclick="$('#main').moveTo(9)">Solicitar Orçamento</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sec-7" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-white">
-        <div class="container">
-          <div class="row wow animate__animated animate__fadeIn" data-wow-duration="1.5s">
-            <div class="col-12 pb-5">
-              <h1 class="extra color-text text-center">Distribuido em mais de 50 operadoras</h1>
-            </div>
-          </div>
-          <div class="row d-flex wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
-            <div class="col-12 pt-5">
-              <img src="./images/clients.png" alt="" class="d-flex mx-auto img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sec-8" class="d-flex vh-md-100 justify-content-center align-items-center flex-column  pt-5 bg-gray">
-        <div class="container">
-          <div class="row wow animate__animated animate__fadeIn" data-wow-duration="1.5s">
-            <div class="col-12 col-md-6 pb-md-5 pb-3">
-              <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-flex d-none ml-auto">
-              <img src="./images/superplayer.svg" alt="Logo superplayer" class="img-fluid d-md-none d-flex mx-auto" width="100">
-            </div>
-            <div class="col-12 col-md-6">
-              <h1 class="d-none d-md-block">Líder em serviços <br>
-                de streaming de música<br>
-                para empresas.</h1>
-                <h2 class="d-block d-md-none">Líder em serviços <br>
-                  de streaming de música<br>
-                  para empresas.</h2>
-
-              <p class="fs-22 color-text pt-5 pb-md-5 f-600">Mais de 6 milhões de downloads <br> nas nossas plataformas</p>
-            </div>
-          </div>
-          <div class="row pt-5 wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (1).svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (2).svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (3).svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (4).svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (6).svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-2 col-4">
-              <img src="./images/clients_superplayer (5).svg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="row pt-5 wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="2s">
-            <div class="col-12 text-center">
-              <small>UMA EMPRESA</small>
-            </div>
-            <div class="col-12">
-              <img src="./images/movile.svg" alt="" class="d-flex mx-auto">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sec-9" data-wow-duration="2s"
-        class="wow animate__animated animate__fadeIn d-flex vh-100 justify-content-center align-items-center flex-column  pt-5 bg-final-gray mt-5 mt-md-0">
-        <div class="container">
-          <div class="col-md-12">
-            <h2 class="bold-extra py-5">Vamos Conversar?</h2>
-            <form class="form-contact">
-              <div class="form-row">
-                <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
-                  <input type="text" class="form-control" placeholder="Nome" required>
-                  <input type="text" class="form-control" placeholder="Celular" required>
-                  <input type="text" class="form-control" placeholder="Empresa" required>
-                  <select class="custom-select m-0 p-0 pl-3" required>
-                    <option selected>Número de clientes</option>
-                    <option value="1">1-10</option>
-                    <option value="2">11-50</option>
-                    <option value="2">51-100</option>
-                    <option value="3">100+</option>
-                  </select>
-
-                </div>
-                <div class="col-md-6 pl-md-4 col-12">
-                  <textarea class="form-control mt-3 mt-md-0 pt-3 h-md-100" id="exampleFormControlTextarea1"
-                    placeholder="Nos fale do seu provedor…" rows="10"></textarea>
-                  <button type="submit" class="btn btn-black shadow mt-4 ml-auto px-4 py-1 d-flex bold-extra">Solicitar
-                    Cotação</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="container pt-md-5">
-          <div class="row">
-            <div class="col-md-12 pt-md-5">
-              <img src="./images/logo-main.svg" alt="" width="200" class="d-flex mx-auto">
-              <p class="color-text fs-22 text-center extra"> <a href="mailto:comercial@mumo.fm">comercial@mumo.fm</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="badge fixed-badge shadow" onclick="$('#main').moveTo(9)">
-      <span>SVA: Solicite um orçamento <br>
-          para o seu provedor.</span></span>
-    </div>
+      </div>
+    </section>
+  </main>
+  <div class="badge fixed-badge shadow" onclick="$('#main').moveTo(9)">
+    <span>SVA: Solicite um orçamento <br>
+      para o seu provedor.</span></span>
+  </div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
@@ -313,20 +296,20 @@
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <!-- endbuild -->
+  <!-- endbuild -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js"
-  integrity="sha512-3vC1ND9Q0xIF5ArZ7fiUJhuhNN52pcZ5lY4Q7ZYu+spttwrEM4MgZuAAioHscDppywlBvu2YWZui+oaE3iPy2A=="
-  crossorigin="anonymous"></script>
+    integrity="sha512-3vC1ND9Q0xIF5ArZ7fiUJhuhNN52pcZ5lY4Q7ZYu+spttwrEM4MgZuAAioHscDppywlBvu2YWZui+oaE3iPy2A=="
+    crossorigin="anonymous"></script>
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
     integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
   <script>
     $('.card-deck a').fancybox();
-    // new WOW({ mobile: false }).init();
+    new WOW({ mobile: false }).init();
   </script>
 </body>
 

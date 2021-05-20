@@ -76,6 +76,7 @@ $('#main').onepage_scroll({
   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
   updateURL: true, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
   beforeMove: function (index) {
+    $('#sec-' + index).html($('#sec-' + index + ' > div'))
     headerControl(index);
   }, // This option accepts a callback function. The function will be called before the page moves.
   afterMove: function (index) {
