@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -53,12 +52,12 @@
             <h1 class="color-white extra d-block d-md-none text-center wow animate__animated animate__fadeIn"
               data-wow-delay="1s">É só dar play</h1>
             <div class="wow animate__animated animate__fadeIn" data-wow-delay="2s">
-              <p class="extra color-white text-center d-flex justify-content-center align-items-center">Baixe os
+              <!-- <p class="extra color-white text-center d-flex justify-content-center align-items-center">Baixe os
                 aplicativos
                 nas lojas</p>
 
               <img src="./images/googleplay.png" alt="Google Play">
-              <img src="./images/appstore.png" alt="App Store">
+              <img src="./images/appstore.png" alt="App Store"> -->
             </div>
             <a class="float-icon" onclick="$('#main').moveTo(2)">
               <img src="./images/chevron.svg" alt="click to scroll">
@@ -99,9 +98,9 @@
               <h1 class="extra color-text pt-5">Em qualquer lugar</h1>
               <p class="fs-28 color-text pt-3">Tv e Celulares</p>
               <p class="fs-28 color-text">Android, IOS e Android TV</p>
-              <div>
-                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play">
-                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store">
+              <div class="pt-4">
+                <img src="./images/googleplay.png" class="img-fluid" alt="Google Play" width="120"> <!-- diminuir e aumentar o espaçamento entre o texto -->
+                <img src="./images/appstore.png" class="pl-2 img-fluid" alt="App Store"  width="125">
               </div>
             </div>
           </div>
@@ -129,10 +128,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 flex-column justify-content-center align-items-center">
-              <h1 class="extra text-white text-center pt-md-5 extra">É só dar play e curtir</h1>
+              <h1 class="extra text-white text-center pt-md-5 extra">É só dar play e curtir</h1> <!--Ajustar conteúdo-->
             </div>
           </div>
-          <div class="row mt-md-5 pt-md-5 pt-2">
+          <div class="row mt-md-3  pt-2">
             <div
               class="col-md-3 col-6 d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeIn"
               data-wow-duration="2s"> <img src="./images/icon (2).svg" width="100" class="img-fluid" alt="">
@@ -160,7 +159,7 @@
           <div class="row pb-md-5 wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="1s">
             <div class="col-12 pt-5 d-flex align-items-center">
               <a data-fancybox href="https://www.youtube.com/watch?v=lIUenAPoLac" class="d-flex mx-auto">
-                <img class="img-fluid" src="./images/video_fallback.png" />
+                <img class="img-fluid w-75 d-flex mx-auto" src="./images/video_fallback.png" />
               </a>
             </div>
           </div>
@@ -264,10 +263,10 @@
             <form class="form-contact">
               <div class="form-row">
                 <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
-                  <input type="text" class="form-control" placeholder="Nome">
-                  <input type="text" class="form-control" placeholder="Celular">
-                  <input type="text" class="form-control" placeholder="Empresa">
-                  <select class="custom-select m-0 p-0 pl-3">
+                  <input type="text" class="form-control" placeholder="Nome" required>
+                  <input type="text" class="form-control" placeholder="Celular" required>
+                  <input type="text" class="form-control" placeholder="Empresa" required>
+                  <select class="custom-select m-0 p-0 pl-3" required>
                     <option selected>Número de clientes</option>
                     <option value="1">1-10</option>
                     <option value="2">11-50</option>
