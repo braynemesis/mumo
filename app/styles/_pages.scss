@@ -1,8 +1,15 @@
-#hero{
-  background-image: linear-gradient(to right top, #ff7246, #ff6a4a, #ff624e, #ff5a53, #ff5158);
+#hero {
+  background-image: linear-gradient(
+    to right top,
+    #ff7246,
+    #ff6a4a,
+    #ff624e,
+    #ff5a53,
+    #ff5158
+  );
   height: 100vh;
-  .hat{
-    background: url('../images/hat_guy.png');
+  .hat {
+    background: url("../images/hat_guy.png");
     background-position: bottom;
     background-repeat: no-repeat;
     height: 100vh;
@@ -13,7 +20,7 @@
       background-position-x: 30%;
       align-items: center !important;
     }
-    .inner-container{
+    .inner-container {
       max-width: 900px;
       display: flex;
       flex-direction: column;
@@ -21,52 +28,70 @@
       align-items: start;
       margin: 0 auto;
     }
-    .mumo-logo{
+    .mumo-logo {
       padding-top: 5em;
     }
-    .float-icon{
+    .float-icon {
       position: absolute;
-      bottom: 2rem;
+      bottom: 5rem;
       right: 50%;
       cursor: pointer;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       @media screen and (max-width: 468px) {
         right: auto;
       }
-      &:hover{
+      &:hover {
         transform: translateY(-10px);
       }
     }
   }
 }
 
-.header{
+.header {
   position: fixed;
   top: 0;
   height: 60px;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   z-index: 2;
-  .container{
+  .container {
     margin-top: 1rem;
   }
 }
 
-#sec-3{
-    height: 100vh;
-    background: url('../images/for_all.png') center left no-repeat;
-    background-size: 56%;
-    background-position-x: -4rem;
-    @media  screen and (max-width: 900px) {
-      background: none !important;
-    }
+#sec-3 {
+  height: 100vh;
+  background: url("../images/for_all.png") center left no-repeat;
+  background-size: 56%;
+  background-position-x: -4rem;
+  @media screen and (max-width: 900px) {
+    background: none !important;
+  }
 }
 
-.gradient-orange{
-  background-image: linear-gradient(to right top, #ff7246, #ff6a4a, #ff624e, #ff5a53, #ff5158);
+.gradient-orange {
+  background-image: linear-gradient(
+    to right top,
+    #ff7246,
+    #ff6a4a,
+    #ff624e,
+    #ff5a53,
+    #ff5158
+  );
 }
 
-.btn-mumo{
+.gradient-orange-reverse {
+  background-image: linear-gradient(
+    to right bottom,
+    #ff7246,
+    #ff6a4a,
+    #ff624e,
+    #ff5a53,
+    #ff5158
+  );
+}
+
+.btn-mumo {
   background-color: white;
   color: $primary;
   border-radius: 4rem;
@@ -77,54 +102,77 @@
   margin-top: 2rem;
 }
 
-.btn-black{
-background-color: $secondary;
-font-weight: 600;
-color: white;
+.btn-black {
+  background-color: $secondary;
+  font-weight: 600;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: white;
+    opacity: 0.8;
+  }
 }
 
-.bg-gray{
-  background-color: #F8F7FD;
+.bg-gray {
+  background-color: #f8f7fd;
 }
 
-.bg-final-gray{
-  background: url('../images/bg-final.png') center center no-repeat;
-  background-color: #F8F7FD;
+.bg-final-gray {
+  background: url("../images/bg-final.png") center center no-repeat;
+  background-color: #f8f7fd;
 }
 
+.form-control:focus,
+.custom-select:focus {
+  border-color: #fb6253;
+  box-shadow: 0 0 0 0.1rem rgba(251, 98, 83, 0.7) !important;
+}
 
-.form-contact{
-  input[type='text'], select{
+.form-contact {
+  input[type="text"],
+  select {
     height: 3.4rem;
     border: 0;
     border-bottom: 2px solid #f1f1f1;
     margin-bottom: 1.3rem;
   }
-  textarea{
+  textarea {
     border: 0;
     border: none !important;
     border-bottom: 2px solid #f1f1f1 !important;
   }
 }
 
-
-.video-frame{
+.video-frame {
   max-width: 760px !important;
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
-.fixed-badge{
+.fixed-badge {
   position: fixed;
   right: 1rem;
   bottom: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background: $text;
   color: white;
   padding: 1.5rem 1rem;
   border-radius: 10rem;
   cursor: pointer;
-  a{
+  a {
     color: white;
     text-decoration: none;
+  }
+  @media screen and (max-width: 900px) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: inherit;
   }
 }
