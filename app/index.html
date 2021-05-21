@@ -263,7 +263,7 @@
             <div class="form-row">
               <div class="col-md-6 col-12 d-flex flex-column justify-content-between">
                 <input type="text" class="form-control" placeholder="Nome" name="name" id="name" required>
-                <input type="text" class="form-control" placeholder="Celular" name="phone" id='phone' required>
+                <input type="text" class="form-control" placeholder="Celular" name="phone" id='phone'  onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" required>
                 <input type="text" class="form-control" placeholder="Empresa" name="company" id="company" required>
                 <select class="custom-select m-0 p-0 pl-3" name="customers" id="customers" required>
                   <option selected>Número de clientes</option>
