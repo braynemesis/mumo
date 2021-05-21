@@ -11,6 +11,7 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css" type="text/css" />
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -301,6 +302,16 @@
     <span>SVA: Solicite um orçamento <br>
       para o seu provedor.</span></span>
   </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="./images/sending.gif" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
@@ -314,6 +325,7 @@
   </script>
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
   <script type="text/javascript" src="/node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
   <!-- endbuild -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js"

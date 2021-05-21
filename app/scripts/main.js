@@ -90,33 +90,49 @@ $("#main").onepage_scroll({
 });
 
 function registerLead(values) {
-  fetch(
+  console.log(values)
+  var body = {
+    event_type: "CONVERSION",
+    event_family: "CDP",
+    payload: {
+      conversion_identifier: "mumo",
+      name: values.name,
+      email: "mumo@mumo.fm",
+      mobile_phone: values.phone,
+      company_name: values.company,
+      available_for_mailing: true,
+      cf_numero_de_clientes: values.customers,
+      cf_mensagem: values.msg
+    },
+  }
+fetch(
     "https://api.rd.services/platform/conversions?api_key=8243915ba4f62b7a2db2a20d67651853",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: {
-        event_type: "CONVERSION",
-        event_family: "CDP",
-        payload: {
-          conversion_identifier: "mumo",
-          name: values.name,
-          email: "mumo@mumo.fm",
-          mobile_phone: values.phone,
-          company_name: values.company,
-          available_for_mailing: true,
-          cf_numero_de_clientes: values.customers,
-        },
-      },
+      body: JSON.stringify(body)
     }
   )
     .then((response) => {
-      console.log(response);
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Obrigado, sua mensagem foi enviada!',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      document.getElementById("contact-form").reset();
     })
     .catch((err) => {
-      console.error(err);
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Ops! tivemos um problema aqui. Tente novamente mais tarde.',
+        showConfirmButton: false,
+        timer: 1500
+      })
     });
 }
 
@@ -129,7 +145,7 @@ function handleSubmit(event) {
 
   value.topics = data.getAll("topics");
 
-  registerLead(value.topics);
+  registerLead(value);
 }
 
 const form = document.querySelector("form");
