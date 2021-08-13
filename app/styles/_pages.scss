@@ -63,7 +63,7 @@
 
 #sec-4 {
   height: 100vh;
-  background: url("../images/for_all.png") center left no-repeat;
+  background: url("../images/bg.svg") center left no-repeat;
   background-size: 56%;
   background-position-x: -4rem;
   @media screen and (max-width: 900px) {
@@ -177,4 +177,11 @@ a {
   &:hover {
     color: inherit;
   }
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #000000 !important;
 }

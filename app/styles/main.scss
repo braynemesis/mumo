@@ -61,3 +61,16 @@ h1, h2, h4, h5, b{
     height: 100%!important;
   }
 }
+
+
+@media screen and(max-width: 600px){
+  h1{
+    font-size: 1.8rem;
+  }
+  .form-contact input[type="text"], .form-contact select{
+    height: 2.2rem;
+  }
+  .form-contact{
+    padding-top: 1rem;
+  }
+}
