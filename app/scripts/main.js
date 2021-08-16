@@ -67,19 +67,19 @@ function registerLead(values) {
       company_name: values.company,
       available_for_mailing: true,
       cf_numero_de_clientes: values.customers,
-      cf_mensagem: values.msg
+      cf_mensagem: values.msg,
     },
-  }
-  $('.loader-message').hide()
-  $('.spinner-border').show()
-fetch(
+  };
+  $('.loader-message').hide();
+  $('.spinner-border').show();
+  fetch(
     'https://api.rd.services/platform/conversions?api_key=8243915ba4f62b7a2db2a20d67651853',
     {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     }
   )
     .then(() => {
@@ -88,11 +88,11 @@ fetch(
         icon: 'success',
         title: 'Obrigado, sua mensagem foi enviada!',
         showConfirmButton: false,
-        timer: 1500
-      })
+        timer: 1500,
+      });
       document.getElementById('contact-form').reset();
-      $('.loader-message').show()
-      $('.spinner-border').hide()
+      $('.loader-message').show();
+      $('.spinner-border').hide();
     })
     .catch((err) => {
       Swal.fire({
@@ -100,10 +100,10 @@ fetch(
         icon: 'error',
         title: 'Ops! tivemos um problema aqui. Tente novamente mais tarde.',
         showConfirmButton: false,
-        timer: 1500
-      })
-      $('.loader-message').show()
-      $('.spinner-border').hide()
+        timer: 1500,
+      });
+      $('.loader-message').show();
+      $('.spinner-border').hide();
     });
 }
 
@@ -122,9 +122,8 @@ function handleSubmit(event) {
 var form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
-
 function mask(o, f) {
-  setTimeout(function() {
+  setTimeout(function () {
     var v = mphone(o.value);
     if (v != o.value) {
       o.value = v;
@@ -151,7 +150,90 @@ function mphone(v) {
 //   $('.dropdown-menu').fadeToggle('fast')
 // })
 // Add slideDown animation to dropdown
-$('.dropdown-menu .dropdown-item').on('click', function(){
-  $('.dropdown-menu .dropdown-item').removeClass('active')
-  $(this).addClass('active')
-})
+$('.dropdown-menu .dropdown-item').on('click', function () {
+  $('.dropdown-menu .dropdown-item').removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.item-card').on('mouseenter', function () {
+  var target = $(this).attr('id');
+  console.log($(this).attr('id'));
+  switch (target) {
+    case '1':
+      $('#text-content')
+        .html(
+          'Com nosso SVA de música e notícias seu provedor oferece mais valor para os clientes enquanto economiza nos impostos.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    case '2':
+      $('#text-content')
+        .html(
+          'Ofereça mais valor para seus assinantes com centenas de canais de música - 24h por dia, sem propaganda e com a a melhor curadoria.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    case '3':
+      $('#text-content')
+        .html(
+          'Fidelize seus clientes e aumente sua taxa de recompra adicionando música e notícias a sua oferta prime - 24h por dia e sem propaganda.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    case '4':
+      $('#text-content')
+        .html(
+          'Crie um diferencial inovador para seu cliente oferecendo música e notícias já integradas aos veículos - 24h por dia e sem propagandas.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    case '5':
+      $('#text-content')
+        .html(
+          'Fidelize e ofereça mais valor para seus clientes oferecendo um app de música e notícias - 24h por dia e sem propagandas.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    case '6':
+      $('#text-content')
+        .html(
+          'Utilize um habito diário para aumentar a frequência de uso do seu app adicionando música e notícias - 24h por dia e sem propagandas.'
+        )
+        .addClass('fade-in');
+      setTimeout(() => {
+        $('#text-content').removeClass('fade-in');
+      }, 100);
+      break;
+    default:
+      $('#text-content').html(
+        'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
+      );
+      break;
+  }
+});
+
+$('.item-card').on('mouseleave', function () {
+  $('#text-content')
+    .html(
+      'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
+    )
+    .addClass('fade-in');
+  setTimeout(() => {
+    $('#text-content').removeClass('fade-in');
+  }, 100);
+});

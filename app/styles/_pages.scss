@@ -178,10 +178,60 @@ a {
     color: inherit;
   }
 }
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: #000000 !important;
+}
+
+.item-card {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  border-radius: 0.8rem;
+  min-height: 220px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    svg {
+      #Retângulo_3082 {
+        fill: #fb6253;
+      }
+      path {
+
+        fill:#fb6253;
+
+      }
+    }
+    color: #fb6253;
+    .card-footer {
+      border-radius: 0.8rem;
+
+      background: transparent;
+    }
+    background: white;
+    img {
+      filter: brightness(0);
+    }
+  }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
