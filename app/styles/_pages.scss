@@ -217,6 +217,13 @@ a {
       filter: brightness(0);
     }
   }
+  @media  screen and (max-width: 600px) {
+    width: 60%;
+    min-height: 200px;
+    .card-body {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .fade-in {
@@ -234,4 +241,13 @@ a {
 	100% {
 		opacity: 1;
 	}
+}
+
+#text-content{
+  min-height: 120px;
+  font-size: 1.2rem;
+  @media screen and (max-width: 900px){
+  min-height: 100px;
+    font-size: 1rem;
+  }
 }

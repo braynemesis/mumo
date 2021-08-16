@@ -7,6 +7,7 @@ var pageList = [
   'Dispositivos',
   'Para Todos',
   'É só dar play',
+  'Seu negócio',
   'Seu Provedor',
   'Operadoras',
   'Superplayer',
@@ -47,6 +48,7 @@ $('#main').onepage_scroll({
     headerControl(index);
   }, // This option accepts a callback function. The function will be called before the page moves.
   afterMove: function (index) {
+    cardFeatures()
     setTitleContent(index);
   }, // This option accepts a callback function. The function will be called after the page moves.
   loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
@@ -155,85 +157,125 @@ $('.dropdown-menu .dropdown-item').on('click', function () {
   $(this).addClass('active');
 });
 
-$('.item-card').on('mouseenter', function () {
-  var target = $(this).attr('id');
-  console.log($(this).attr('id'));
-  switch (target) {
-    case '1':
-      $('#text-content')
-        .html(
-          'Com nosso SVA de música e notícias seu provedor oferece mais valor para os clientes enquanto economiza nos impostos.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    case '2':
-      $('#text-content')
-        .html(
-          'Ofereça mais valor para seus assinantes com centenas de canais de música - 24h por dia, sem propaganda e com a a melhor curadoria.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    case '3':
-      $('#text-content')
-        .html(
-          'Fidelize seus clientes e aumente sua taxa de recompra adicionando música e notícias a sua oferta prime - 24h por dia e sem propaganda.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    case '4':
-      $('#text-content')
-        .html(
-          'Crie um diferencial inovador para seu cliente oferecendo música e notícias já integradas aos veículos - 24h por dia e sem propagandas.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    case '5':
-      $('#text-content')
-        .html(
-          'Fidelize e ofereça mais valor para seus clientes oferecendo um app de música e notícias - 24h por dia e sem propagandas.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    case '6':
-      $('#text-content')
-        .html(
-          'Utilize um habito diário para aumentar a frequência de uso do seu app adicionando música e notícias - 24h por dia e sem propagandas.'
-        )
-        .addClass('fade-in');
-      setTimeout(() => {
-        $('#text-content').removeClass('fade-in');
-      }, 100);
-      break;
-    default:
-      $('#text-content').html(
-        'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
-      );
-      break;
-  }
-});
 
-$('.item-card').on('mouseleave', function () {
-  $('#text-content')
-    .html(
-      'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
-    )
-    .addClass('fade-in');
-  setTimeout(() => {
-    $('#text-content').removeClass('fade-in');
-  }, 100);
-});
+function cardFeatures(){
+  $('.item-card').on('mouseenter', function () {
+    var target = $(this).attr('id');
+    switch (target) {
+      case '1':
+        $('#text-content')
+          .html(
+            'Com nosso SVA de música e notícias seu provedor oferece mais valor para os clientes enquanto economiza nos impostos.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      case '2':
+        $('#text-content')
+          .html(
+            'Ofereça mais valor para seus assinantes com centenas de canais de música - 24h por dia, sem propaganda e com a a melhor curadoria.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      case '3':
+        $('#text-content')
+          .html(
+            'Fidelize seus clientes e aumente sua taxa de recompra adicionando música e notícias a sua oferta prime - 24h por dia e sem propaganda.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      case '4':
+        $('#text-content')
+          .html(
+            'Crie um diferencial inovador para seu cliente oferecendo música e notícias já integradas aos veículos - 24h por dia e sem propagandas.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      case '5':
+        $('#text-content')
+          .html(
+            'Fidelize e ofereça mais valor para seus clientes oferecendo um app de música e notícias - 24h por dia e sem propagandas.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      case '6':
+        $('#text-content')
+          .html(
+            'Utilize um habito diário para aumentar a frequência de uso do seu app adicionando música e notícias - 24h por dia e sem propagandas.'
+          )
+          .addClass('fade-in');
+        setTimeout(() => {
+          $('#text-content').removeClass('fade-in');
+        }, 100);
+        break;
+      default:
+        $('#text-content').html(
+          'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
+        );
+        break;
+    }
+  });
+
+  $('.item-card').on('mouseleave', function () {
+    $('#text-content')
+      .html(
+        'Passe o mouse sobre o ícone e saiba mais sobre as vantagens do MUMO para a sua empresa.'
+      )
+      .addClass('fade-in');
+    setTimeout(() => {
+      $('#text-content').removeClass('fade-in');
+    }, 100);
+  });
+
+  function postsCarousel() {
+    var checkWidth = $(window).width();
+    var owlPost = $('.owl');
+    if (checkWidth > 767) {
+        if (typeof owlPost.data('owl.carousel') != 'undefined') {
+            owlPost.data('owl.carousel').destroy();
+        }
+        owlPost.removeClass('owl-carousel');
+    } else if (checkWidth < 768) {
+        owlPost.addClass('owl-carousel');
+        owlPost.owlCarousel({
+          center: true,
+          items: 1,
+          loop: false,
+          margin: 10,
+          nav:false,
+          dots: false,
+          responsive:{
+            0:{
+                  items:1,
+                  margin: -140,
+                  center: false,
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:6
+              }
+          }
+        });
+    }
+  }
+  $('.owl').owlCarousel('destroy');
+  postsCarousel();
+  $(window).on('resize',postsCarousel);
+
+}
