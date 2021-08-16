@@ -195,6 +195,10 @@ a {
   border-radius: 0.8rem;
   min-height: 220px;
   transition: all 0.2s ease-in-out;
+  .card-footer{
+    background-color: transparent;
+    background: transparent;
+  }
   &:hover {
     svg {
       #Retângulo_3082 {
@@ -209,7 +213,7 @@ a {
     color: #fb6253;
     .card-footer {
       border-radius: 0.8rem;
-
+      background-color: transparent;
       background: transparent;
     }
     background: white;
