@@ -8,7 +8,6 @@ var pageList = [
   'Para Todos',
   'É só dar play',
   'Seu negócio',
-  'Seu Provedor',
   'Operadoras',
   'Superplayer',
   'Contato',
