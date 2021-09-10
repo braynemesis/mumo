@@ -63,7 +63,7 @@ function registerLead(values) {
     payload: {
       conversion_identifier: 'superplayer',
       name: values.name,
-      email: 'mumo@mumo.fm',
+      email: values.email,
       mobile_phone: values.phone,
       company_name: values.company,
       available_for_mailing: true,
@@ -260,7 +260,7 @@ function cardFeatures(){
           responsive:{
             0:{
                   items:1,
-                  margin: -140,
+                  margin: -80,
                   center: false,
               },
               600:{
