@@ -196,6 +196,11 @@ a {
   border-radius: 0.8rem;
   min-height: 220px;
   transition: all 0.2s ease-in-out;
+  .card-body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
   .card-footer{
     background-color: transparent;
     background: transparent;
