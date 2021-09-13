@@ -74,3 +74,18 @@ h1, h2, h4, h5, b{
     padding-top: 1rem;
   }
 }
+
+.item-card {
+  padding: 0 !important;
+  margin: 0;
+  .card-body{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .card-footer{
+    h5, h6 {
+      font-size: 1rem !important;
+      line-break: auto;
+    }
+  }
+}
