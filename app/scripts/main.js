@@ -1,6 +1,17 @@
 $('.header').fadeOut('fast');
 $('.fixed-badge').fadeOut('fast');
 
+$(window).on('scroll',function() {
+  if (jQuery(this).scrollTop()>250)
+   {
+    $('.header').fadeIn('fast');
+   }
+  else
+   {
+    $('.header').fadeOut('fast');
+   }
+});
+
 var pageList = [
   '',
   'Sobre',
@@ -35,27 +46,27 @@ function headerControl(index) {
   }
 }
 
-$('#main').onepage_scroll({
-  sectionContainer: 'section', // sectionContainer accepts any kind of selector in case you don't want to use section
-  easing: 'ease-in-out', // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-  // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-  animationTime: 1000, // AnimationTime let you define how long each section takes to animate
-  pagination: false, // You can either show or hide the pagination. Toggle true for show, false for hide.
-  updateURL: true, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-  beforeMove: function (index) {
-    $('#sec-' + index).html($('#sec-' + index + ' > div'));
-    headerControl(index);
-  }, // This option accepts a callback function. The function will be called before the page moves.
-  afterMove: function (index) {
-    cardFeatures()
-    setTitleContent(index);
-  }, // This option accepts a callback function. The function will be called after the page moves.
-  loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-  keyboard: true, // You can activate the keyboard controls
-  responsiveFallback: false, // You can fallback to normal page scroll by defining the width of the browser in which
-  direction: 'vertical', // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-});
-
+// $('#main').onepage_scroll({
+//   sectionContainer: 'section', // sectionContainer accepts any kind of selector in case you don't want to use section
+//   easing: 'ease-in-out', // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+//   // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+//   animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+//   pagination: false, // You can either show or hide the pagination. Toggle true for show, false for hide.
+//   updateURL: true, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+//   beforeMove: function (index) {
+//     $('#sec-' + index).html($('#sec-' + index + ' > div'));
+//     headerControl(index);
+//   }, // This option accepts a callback function. The function will be called before the page moves.
+//   afterMove: function (index) {
+//     cardFeatures()
+//     setTitleContent(index);
+//   }, // This option accepts a callback function. The function will be called after the page moves.
+//   loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+//   keyboard: true, // You can activate the keyboard controls
+//   responsiveFallback: false, // You can fallback to normal page scroll by defining the width of the browser in which
+//   direction: 'vertical', // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+// });
+cardFeatures()
 function registerLead(values) {
   var body = {
     event_type: 'CONVERSION',
@@ -151,10 +162,10 @@ function mphone(v) {
 //   $('.dropdown-menu').fadeToggle('fast')
 // })
 // Add slideDown animation to dropdown
-$('.dropdown-menu .dropdown-item').on('click', function () {
-  $('.dropdown-menu .dropdown-item').removeClass('active');
-  $(this).addClass('active');
-});
+// $('.dropdown-menu .dropdown-item').on('click', function () {
+//   $('.dropdown-menu .dropdown-item').removeClass('active');
+//   $(this).addClass('active');
+// });
 
 
 function cardFeatures(){
@@ -278,3 +289,20 @@ function cardFeatures(){
   $(window).on('resize',postsCarousel);
 
 }
+jQuery($ => {
+  // The speed of the scroll in milliseconds
+  const speed = 0;
+
+  $('a[href*="#"]')
+    .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+    .unbind('click.smoothScroll')
+    .bind('click.smoothScroll', event => {
+      const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+      }
+    });
+});
